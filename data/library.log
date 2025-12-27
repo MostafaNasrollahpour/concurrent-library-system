@@ -1,7 +1,50 @@
-[2025-12-27 11:18:58] PID:30560 User user1 started with file user1.txt
-[2025-12-27 11:18:58] PID:30561 User user2 started with file user2.txt
-[2025-12-27 11:18:58] PID:30560 User user1 error: File user1.txt not found
-[2025-12-27 11:18:58] PID:30561 User user2 error: File user2.txt not found
-[2025-12-27 11:18:58] PID:30562 User server started
-[2025-12-27 11:18:58] PID:30559 Main library server started
-[2025-12-27 11:18:58] PID:30563 Book server started
+[2025-12-27 12:19:20] PID:35554 User user1 started with clients/user1.txt
+[2025-12-27 12:19:20] PID:35555 User user2 started with clients/user2.txt
+[2025-12-27 12:19:20] PID:35556 User server started on port 5001
+[2025-12-27 12:19:20] PID:35553 Main library server started on port 5000
+[2025-12-27 12:19:20] PID:35557 Book server started on port 5002
+[2025-12-27 12:19:20] PID:35556 Registered user user1 ID 1
+[2025-12-27 12:19:20] PID:35554 User user1 registered ID 1
+[2025-12-27 12:19:20] PID:35558 Handled register_user user1: success 1
+[2025-12-27 12:19:20] PID:35557 Registered book Harry_Potter
+[2025-12-27 12:19:20] PID:35554 User user1 register_book Harry_Potter: success
+[2025-12-27 12:19:20] PID:35560 Handled register_book Harry_Potter: success
+[2025-12-27 12:19:20] PID:35556 Checked user 1: success
+[2025-12-27 12:19:20] PID:35557 Lent Harry_Potter to 1
+[2025-12-27 12:19:20] PID:35554 User user1 lend Harry_Potter: success
+[2025-12-27 12:19:20] PID:35562 Handled lend_book 1 Harry_Potter: success
+[2025-12-27 12:19:21] PID:35555 User user2 slept 1.0s
+[2025-12-27 12:19:21] PID:35556 Registered user user2 ID 2
+[2025-12-27 12:19:21] PID:35555 User user2 registered ID 2
+[2025-12-27 12:19:21] PID:35568 Handled register_user user2: success 2
+[2025-12-27 12:19:21] PID:35556 Checked user 2: success
+[2025-12-27 12:19:21] PID:35557 Failed lend Harry_Potter to 2
+[2025-12-27 12:19:21] PID:35555 User user2 lend Harry_Potter: failure
+[2025-12-27 12:19:21] PID:35571 Handled lend_book 2 Harry_Potter: failure
+[2025-12-27 12:19:21] PID:35557 Registered book Game_of_Thrones
+[2025-12-27 12:19:21] PID:35555 User user2 register_book Game_of_Thrones: success
+[2025-12-27 12:19:21] PID:35576 Handled register_book Game_of_Thrones: success
+[2025-12-27 12:19:21] PID:35556 Checked user 2: success
+[2025-12-27 12:19:21] PID:35557 Lent Game_of_Thrones to 2
+[2025-12-27 12:19:21] PID:35555 User user2 lend Game_of_Thrones: success
+[2025-12-27 12:19:21] PID:35580 Handled lend_book 2 Game_of_Thrones: success
+[2025-12-27 12:19:22] PID:35554 User user1 slept 2.0s
+[2025-12-27 12:19:22] PID:35555 User user2 slept 1.0s
+[2025-12-27 12:19:22] PID:35556 Checked user 1: success
+[2025-12-27 12:19:22] PID:35556 Checked user 2: success
+[2025-12-27 12:19:22] PID:35557 Returned Harry_Potter by 1
+[2025-12-27 12:19:22] PID:35554 User user1 return Harry_Potter: success
+[2025-12-27 12:19:22] PID:35595 Handled return_book 1 Harry_Potter: success
+[2025-12-27 12:19:22] PID:35557 Returned Game_of_Thrones by 2
+[2025-12-27 12:19:22] PID:35555 User user2 return Game_of_Thrones: success
+[2025-12-27 12:19:22] PID:35596 Handled return_book 2 Game_of_Thrones: success
+[2025-12-27 12:19:55] PID:35556 Registered user NewUser ID 3
+[2025-12-27 12:19:55] PID:35799 Handled register_user NewUser: success 3
+[2025-12-27 12:19:55] PID:35557 Registered book NewBook
+[2025-12-27 12:19:55] PID:35801 Handled register_book NewBook: success
+[2025-12-27 12:19:55] PID:35556 Checked user 1: success
+[2025-12-27 12:19:55] PID:35557 Lent NewBook to 1
+[2025-12-27 12:19:55] PID:35803 Handled lend_book 1 NewBook: success
+[2025-12-27 12:19:55] PID:35556 Checked user 1: success
+[2025-12-27 12:19:55] PID:35557 Returned NewBook by 1
+[2025-12-27 12:19:55] PID:35806 Handled return_book 1 NewBook: success
