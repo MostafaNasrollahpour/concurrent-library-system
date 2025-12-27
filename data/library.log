@@ -1,0 +1,7 @@
+[2025-12-27 11:18:58] PID:30560 User user1 started with file user1.txt
+[2025-12-27 11:18:58] PID:30561 User user2 started with file user2.txt
+[2025-12-27 11:18:58] PID:30560 User user1 error: File user1.txt not found
+[2025-12-27 11:18:58] PID:30561 User user2 error: File user2.txt not found
+[2025-12-27 11:18:58] PID:30562 User server started
+[2025-12-27 11:18:58] PID:30559 Main library server started
+[2025-12-27 11:18:58] PID:30563 Book server started

@@ -1,0 +1,40 @@
+[2025-12-27 11:54:20] PID:32717 User user1 started with user1.txt
+[2025-12-27 11:54:20] PID:32718 User user2 started with user2.txt
+[2025-12-27 11:54:20] PID:32720 Book server started
+[2025-12-27 11:54:20] PID:32719 User server started
+[2025-12-27 11:54:20] PID:32716 Main library server started
+[2025-12-27 11:54:20] PID:32719 Registered user user1 ID 1
+[2025-12-27 11:54:20] PID:32717 User user1 registered ID 1
+[2025-12-27 11:54:20] PID:32721 Handled register_user for ['user1']: success 1
+[2025-12-27 11:54:20] PID:32720 Registered book Harry_Potter
+[2025-12-27 11:54:20] PID:32717 User user1 register_book Harry_Potter: success
+[2025-12-27 11:54:20] PID:32723 Handled register_book for ['Harry_Potter']: success
+[2025-12-27 11:54:20] PID:32719 Checked user 1: success
+[2025-12-27 11:54:20] PID:32720 Lent Harry_Potter to 1
+[2025-12-27 11:54:20] PID:32717 User user1 lend Harry_Potter: success
+[2025-12-27 11:54:20] PID:32725 Handled lend_book for ['1', 'Harry_Potter']: success
+[2025-12-27 11:54:21] PID:32718 User user2 slept 1.0s
+[2025-12-27 11:54:21] PID:32719 Registered user user2 ID 2
+[2025-12-27 11:54:21] PID:32718 User user2 registered ID 2
+[2025-12-27 11:54:21] PID:32737 Handled register_user for ['user2']: success 2
+[2025-12-27 11:54:21] PID:32719 Checked user 2: success
+[2025-12-27 11:54:21] PID:32718 User user2 lend Harry_Potter: failure
+[2025-12-27 11:54:21] PID:32720 Failed lend Harry_Potter to 2
+[2025-12-27 11:54:21] PID:32741 Handled lend_book for ['2', 'Harry_Potter']: failure
+[2025-12-27 11:54:21] PID:32720 Registered book Game_of_Thrones
+[2025-12-27 11:54:21] PID:32718 User user2 register_book Game_of_Thrones: success
+[2025-12-27 11:54:21] PID:32746 Handled register_book for ['Game_of_Thrones']: success
+[2025-12-27 11:54:21] PID:32719 Checked user 2: success
+[2025-12-27 11:54:21] PID:32720 Lent Game_of_Thrones to 2
+[2025-12-27 11:54:21] PID:32718 User user2 lend Game_of_Thrones: success
+[2025-12-27 11:54:21] PID:32749 Handled lend_book for ['2', 'Game_of_Thrones']: success
+[2025-12-27 11:54:22] PID:32717 User user1 slept 2.0s
+[2025-12-27 11:54:22] PID:32718 User user2 slept 1.0s
+[2025-12-27 11:54:22] PID:32719 Checked user 1: success
+[2025-12-27 11:54:22] PID:32719 Checked user 2: success
+[2025-12-27 11:54:22] PID:32720 Returned Harry_Potter by 1
+[2025-12-27 11:54:22] PID:32717 User user1 return Harry_Potter: success
+[2025-12-27 11:54:22] PID:32758 Handled return_book for ['1', 'Harry_Potter']: success
+[2025-12-27 11:54:22] PID:32720 Returned Game_of_Thrones by 2
+[2025-12-27 11:54:22] PID:32718 User user2 return Game_of_Thrones: success
+[2025-12-27 11:54:22] PID:32759 Handled return_book for ['2', 'Game_of_Thrones']: success

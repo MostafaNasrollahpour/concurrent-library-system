@@ -1,0 +1,7 @@
+Sleep 1.0
+Register
+Lend Harry_Potter
+Register_book Game_of_Thrones
+Lend Game_of_Thrones
+Sleep 1.0
+Return Game_of_Thrones
