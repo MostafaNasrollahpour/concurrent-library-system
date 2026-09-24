@@ -132,8 +132,8 @@ This keeps the repository deterministic while still allowing state to persist be
 
 All services bind to `localhost`.
 
-## Design trade-offs
+## Design scope
 
 The implementation deliberately favors visible OS primitives over abstraction. Forking, sockets, locks, and file persistence are kept close to the request flow so their behavior is easy to inspect.
 
-Keeping these mechanisms explicit also leaves several limitations: there is no connection pool, graceful shutdown protocol, startup readiness barrier, wire-format versioning, or explicit child-process reaping in the main server.
+Higher-level infrastructure such as connection pooling, service orchestration, protocol versioning, and process supervision is kept outside the scope of this implementation.

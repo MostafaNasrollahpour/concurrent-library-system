@@ -137,17 +137,15 @@ The project intentionally uses more than one synchronization mechanism:
 
 These choices keep the concurrency model explicit and make the interaction between processes, threads, sockets, locks, and persistent state easy to inspect.
 
-## Known limitations
+## Design scope
 
-- The system is bound to `localhost` and fixed ports `5000`, `5001`, and `5002`.
-- The TCP protocol is intentionally minimal and has no explicit message framing or protocol versioning.
-- Startup does not include a readiness barrier between servers and clients, so very slow machines can expose a startup race.
-- Forked request-handler processes are not explicitly reaped by the main server.
-- There is no graceful shutdown protocol; the demo is stopped from the terminal.
+This project keeps the networking and process-lifecycle infrastructure intentionally lightweight so the concurrency model remains easy to inspect.
+
+- Services communicate over `localhost` using fixed ports `5000`, `5001`, and `5002`.
+- Communication uses a compact request/response text protocol designed for short local commands.
+- Processes are started and stopped from the terminal rather than through a separate service-management layer.
 
 
 ## License
 
 The source code and repository documentation are released under the [MIT License](LICENSE).
-
-Before publishing coursework publicly, make sure doing so is permitted by your course or university policy.

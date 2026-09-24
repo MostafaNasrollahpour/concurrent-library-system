@@ -49,4 +49,4 @@ The book service then applies its own state checks:
 
 The implementation performs a single `recv(1024)` call for each request or response. There is no length prefix, delimiter framing, streaming mode, or protocol negotiation.
 
-That is sufficient for the short commands used by this project, but it is not intended as a production network protocol.
+The protocol is intentionally scoped to the short local commands used by this project.
