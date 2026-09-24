@@ -2,7 +2,6 @@
 
 A Unix-based concurrent library simulator written in Python to explore operating-system concepts such as **process creation, threads, TCP sockets, synchronization, file locking, inter-process communication, and persistent state**.
 
-
 ## What this project demonstrates
 
 - Process creation with `os.fork()`
@@ -145,6 +144,11 @@ This project keeps the networking and process-lifecycle infrastructure intention
 - Communication uses a compact request/response text protocol designed for short local commands.
 - Processes are started and stopped from the terminal rather than through a separate service-management layer.
 
+## Project History
+
+The core implementation was originally developed in **2025**.
+
+In **2026**, the repository was revisited to improve its documentation, architecture notes, demo scenarios, repository structure, and overall presentation while preserving the original application logic.
 
 ## License
 
